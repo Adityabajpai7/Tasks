@@ -1,0 +1,43 @@
+ABOUT REST API -
+basically REST stands for Representational State Transfer, and API stands for Application Programming Interface. 
+Together, a REST API is a set of rules that allows different software applications to communicate with each other over the internet.
+It is better than SOAP because it have lesser bandwidth is simple and flexible
+
+HOW IT WORKS-
+ A request is sent from client to server in the form of a web URL as HTTP GET or POST or PUT or DELETE request.
+After that, a response comes back from the server in the form of a resource which can be anything like HTML, XML, Image, or JSON. 
+But now JSON is the most popular format being used in Web Services. 
+
+WHY USE REST API?
+Simplicity: REST APIs are easy to understand and use because they work with standard HTTP protocols (like the web pages you visit every day).
+Flexibility: They can handle different types of calls, return various data formats, and even change the structure of calls while maintaining compatibility.
+Scalability: REST APIs can be scaled up easily to handle more requests, making them ideal for large-scale applications.
+
+Common HTTP Methods in REST
+GET:
+Purpose: Retrieve data.
+Success Response: 200 (OK)
+Error Responses: 404 (NOT FOUND), 400 (BAD REQUEST)
+
+POST:
+Purpose: Create new data.
+Success Response: 201 (CREATED) with a link to the new resource.
+
+PUT:
+Purpose: Update existing data or create data if it doesn’t exist.
+Success Responses: 200 (OK) for updates, 201 (CREATED) for new data.
+
+PATCH:
+Purpose: Partially update data.
+Success Responses: 200 (OK) or 204 (NO CONTENT)
+
+REAL WORLD EXAMPLE-
+we can use it in weather applications like-
+Client: Your app sends a GET request to the weather services API endpoint, asking for the weather in delhi.
+Server: The weather service processes this request, fetches the latest weather data for New York, and sends it back.
+Response: Your app receives the data and displays the current temperature, humidity, and forecast to the user.
+
+In summary, a REST API acts as a bridge between different software systems, 
+allowing them to interact and exchange information in a standardized, efficient manner.
+Just like a good waiter helps you enjoy your meal by understanding your order and delivering it correctly,
+a well-designed REST API helps software applications communicate and work together smoothly.
